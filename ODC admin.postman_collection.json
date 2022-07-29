@@ -1,0 +1,1309 @@
+{
+	"info": {
+		"_postman_id": "5b7f5585-182f-4bf7-ba1c-35e0762c88d7",
+		"name": "ODC admin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "course",
+			"item": [
+				{
+					"name": "get all courses",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "9|ou6J3nFIpuSoHcnNvgKQsFwHnBQI5h0HmmtVtInY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.1.1.1:8000/api/courses",
+							"protocol": "http",
+							"host": [
+								"127",
+								"1",
+								"1",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"courses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add course",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "9|ou6J3nFIpuSoHcnNvgKQsFwHnBQI5h0HmmtVtInY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://127.1.1.1:8000/api/course?course_name=CS50&course_level=12&discretion=ksaghkfahgdkjfhadjkh",
+							"protocol": "http",
+							"host": [
+								"127",
+								"1",
+								"1",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"course"
+							],
+							"query": [
+								{
+									"key": "course_name",
+									"value": "CS50"
+								},
+								{
+									"key": "course_level",
+									"value": "12"
+								},
+								{
+									"key": "discretion",
+									"value": "ksaghkfahgdkjfhadjkh"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show course",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "2|mNUBqHaiadCkIDpHhVUllr99MhD5HOG62fKkGWTt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.1.1.1:8000/api/course/show/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"1",
+								"1",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"course",
+								"show",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete course",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "2|mNUBqHaiadCkIDpHhVUllr99MhD5HOG62fKkGWTt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.1.1.1:8000/api/course/destroy/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"1",
+								"1",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"course",
+								"destroy",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update course",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "2|mNUBqHaiadCkIDpHhVUllr99MhD5HOG62fKkGWTt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.1.1.1:8000/api/course/update/2?course_name=react&course_level=6&discretion=knfkdnafdj",
+							"protocol": "http",
+							"host": [
+								"127",
+								"1",
+								"1",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"course",
+								"update",
+								"2"
+							],
+							"query": [
+								{
+									"key": "course_name",
+									"value": "react"
+								},
+								{
+									"key": "course_level",
+									"value": "6"
+								},
+								{
+									"key": "discretion",
+									"value": "knfkdnafdj"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "trainier",
+			"item": [
+				{
+					"name": "get all trainer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "2|mNUBqHaiadCkIDpHhVUllr99MhD5HOG62fKkGWTt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.1.1.1:8000/api/trainers",
+							"protocol": "http",
+							"host": [
+								"127",
+								"1",
+								"1",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"trainers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add trainer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "9|ou6J3nFIpuSoHcnNvgKQsFwHnBQI5h0HmmtVtInY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.1.1.1:8000/api/trainer?name=hossam",
+							"protocol": "http",
+							"host": [
+								"127",
+								"1",
+								"1",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"trainer"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "hossam"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show trainer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "2|mNUBqHaiadCkIDpHhVUllr99MhD5HOG62fKkGWTt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.1.1.1:8000/api/trainer/show/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"1",
+								"1",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"trainer",
+								"show",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete trainer",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.1.1.1:8000/api/trainer/destroy/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"1",
+								"1",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"trainer",
+								"destroy",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update trainer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "2|mNUBqHaiadCkIDpHhVUllr99MhD5HOG62fKkGWTt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.1.1.1:8000/api/trainer/update/1?name=yasser",
+							"protocol": "http",
+							"host": [
+								"127",
+								"1",
+								"1",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"trainer",
+								"update",
+								"1"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "yasser"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "teachings",
+			"item": [
+				{
+					"name": "get all teachings",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "2|mNUBqHaiadCkIDpHhVUllr99MhD5HOG62fKkGWTt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://127.1.1.1:8000/api/teachings",
+							"protocol": "http",
+							"host": [
+								"127",
+								"1",
+								"1",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"teachings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show teaching",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "2|mNUBqHaiadCkIDpHhVUllr99MhD5HOG62fKkGWTt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.1.1.1:8000/api/teaching/show/8",
+							"protocol": "http",
+							"host": [
+								"127",
+								"1",
+								"1",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"teaching",
+								"show",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add teaching",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "9|ou6J3nFIpuSoHcnNvgKQsFwHnBQI5h0HmmtVtInY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.1.1.1:8000/api/teaching?course_id=2&trainer_id=2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"1",
+								"1",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"",
+								"api",
+								"teaching"
+							],
+							"query": [
+								{
+									"key": "course_id",
+									"value": "2"
+								},
+								{
+									"key": "trainer_id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "exams",
+			"item": [
+				{
+					"name": "get all exams",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "2|mNUBqHaiadCkIDpHhVUllr99MhD5HOG62fKkGWTt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.1.1.1:8000/api/exams",
+							"protocol": "http",
+							"host": [
+								"127",
+								"1",
+								"1",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"exams"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add exam",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "9|ou6J3nFIpuSoHcnNvgKQsFwHnBQI5h0HmmtVtInY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.1.1.1:8000/api/exam/?course_id=1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"1",
+								"1",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"exam",
+								""
+							],
+							"query": [
+								{
+									"key": "course_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete exam",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.1.1.1:8000/api/exam/destroy/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"1",
+								"1",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"exam",
+								"destroy",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show exam",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "2|mNUBqHaiadCkIDpHhVUllr99MhD5HOG62fKkGWTt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.1.1.1:8000/api/exam/show/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"1",
+								"1",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"exam",
+								"show",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "question",
+			"item": [
+				{
+					"name": "get all question",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "2|mNUBqHaiadCkIDpHhVUllr99MhD5HOG62fKkGWTt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.1.1.1:8000/api/questions",
+							"protocol": "http",
+							"host": [
+								"127",
+								"1",
+								"1",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"questions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add question",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "9|ou6J3nFIpuSoHcnNvgKQsFwHnBQI5h0HmmtVtInY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "question_content",
+									"value": "cvcvcvcv",
+									"type": "text"
+								},
+								{
+									"key": "question_answer",
+									"value": "gfgfg",
+									"type": "text"
+								},
+								{
+									"key": "question_answer_fake1",
+									"value": "fgfg",
+									"type": "text"
+								},
+								{
+									"key": "question_answer_fake2",
+									"value": "vcvcvcv",
+									"type": "text"
+								},
+								{
+									"key": "question_answer_fake3",
+									"value": "1+1514fdf",
+									"type": "text"
+								},
+								{
+									"key": "exam_id",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.1.1.1:8000/api/question",
+							"protocol": "http",
+							"host": [
+								"127",
+								"1",
+								"1",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"question"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show question",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.1.1.1:8000/api/question/show/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"1",
+								"1",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"question",
+								"show",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete question",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.1.1.1:8000/api/trainer/show/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"1",
+								"1",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"trainer",
+								"show",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "enroll",
+			"item": [
+				{
+					"name": "get all enrolls",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "9|ou6J3nFIpuSoHcnNvgKQsFwHnBQI5h0HmmtVtInY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.1.1.1:8000/api/enroll",
+							"protocol": "http",
+							"host": [
+								"127",
+								"1",
+								"1",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"enroll"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "login Admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|KNDBEGRWISukgQPqRpO3erAwXVgkewEW9qSGP09S",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://127.1.1.1:8000/api/login?email=admin@gmail.com&password=Saico@12345",
+							"protocol": "http",
+							"host": [
+								"127",
+								"1",
+								"1",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "admin@gmail.com"
+								},
+								{
+									"key": "password",
+									"value": "Saico@12345"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register Admin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.1.1.1:8000/api/register?name=admin&email=admintest@gmail.com&password=Saico@12345&password_confirmation=Saico@12345&role=2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"1",
+								"1",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"register"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "admin"
+								},
+								{
+									"key": "email",
+									"value": "admintest@gmail.com"
+								},
+								{
+									"key": "password",
+									"value": "Saico@12345"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "Saico@12345"
+								},
+								{
+									"key": "role",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout Admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|7TUkP0C2XB34LlQEkxCDEW3SQGh5bJPxi3zzdyBy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.1.1.1:8000/api/logout",
+							"protocol": "http",
+							"host": [
+								"127",
+								"1",
+								"1",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "5|3R12NdIgogcJ0YOOFBbdyHPHkJPPnWQ3yswsqHoP",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.1.1.1:8000/api/profile/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"1",
+								"1",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"profile",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "5|3R12NdIgogcJ0YOOFBbdyHPHkJPPnWQ3yswsqHoP",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.1.1.1:8000/api/destroy/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"1",
+								"1",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"destroy",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Student",
+			"item": [
+				{
+					"name": "send code",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "9|ou6J3nFIpuSoHcnNvgKQsFwHnBQI5h0HmmtVtInY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.1.1.1:8000/api/student/senCode/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"1",
+								"1",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"student",
+								"senCode",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all students",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "9|ou6J3nFIpuSoHcnNvgKQsFwHnBQI5h0HmmtVtInY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.1.1.1:8000/api/students",
+							"protocol": "http",
+							"host": [
+								"127",
+								"1",
+								"1",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show student",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "2|tn3zQQu6vnOetC5yam5KsGiA0yPQsVasVQBCyIwP",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.1.1.1:8000/api/student/show/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"1",
+								"1",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"student",
+								"show",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
